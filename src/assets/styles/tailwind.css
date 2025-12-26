@@ -5,10 +5,20 @@
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-md
-      bg-white px-5 py-2.5
-      text-sm font-semibold text-slate-900
-      ring-1 ring-slate-900/20
-      hover:bg-slate-50;
+      bg-slate-900 px-6 py-2
+      text-sm font-semibold text-white
+      hover:bg-slate-800 transition;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-slate-900 hover:text-slate-600 transition;
+  }
+
+  .card-wrapper {
+    @apply bg-white p-6 rounded-lg shadow-sm
+      border border-slate-100
+      flex flex-col justify-between
+      hover:shadow-md transition;
   }
 
   .btn-secondary {

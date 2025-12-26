@@ -1,15 +1,15 @@
-<section class="bg-white">
-  <div class="mx-auto max-w-6xl px-4 py-12">
-    <h2 class="text-xl font-semibold text-brand-primary">
+<section class="bg-white py-10">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-center text-4xl font-medium text-slate-900">
       Qué encontrarás en las jornadas
     </h2>
 
-    <div class="mt-6 grid gap-6 md:grid-cols-3">
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
       <include
         src="./views/components/card.html"
         locals='{
           "title": "Talleres de cocina tradicional",
-          "text": "Sesiones prácticas en grupos reducidos para aprender guisos y técnicas de conservación.",
+          "text": "Sesiones prácticas en grupos reducidos para aprender guisos, masas y técnicas de conservación de toda la vida.",
           "badgeText": "Plazas limitadas",
           "badgeClass": "badge-primary"
         }'
@@ -19,7 +19,7 @@
         src="./views/components/card.html"
         locals='{
           "title": "Charlas y ponencias",
-          "text": "Expertos explican la historia y el futuro de la cocina tradicional.",
+          "text": "Cocineros, productores y expertos en patrimonio gastronómico explican la historia y el futuro de la cocina tradicional.",
           "badgeText": "Entrada libre",
           "badgeClass": "badge-muted"
         }'
@@ -29,11 +29,23 @@
         src="./views/components/card.html"
         locals='{
           "title": "Degustaciones comentadas",
-          "text": "Catas guiadas para entender ingredientes y tradición.",
+          "text": "Catas guiadas para entender el contexto de cada plato, sus ingredientes y su vínculo con la cultura local.",
           "badgeText": "Incluido con inscripción",
           "badgeClass": "badge-success"
         }'
       ></include>
+    </div>
+
+    <div
+      class="mt-10 rounded-md border border-emerald-200 bg-emerald-50 px-6 py-4 text-slate-800"
+    >
+      Las inscripciones están abiertas. Puedes reservar tu plaza desde la
+      sección de
+      <a href="#" class="font-semibold underline">inscripción</a>
+      y consultar todos los detalles en la página de
+      <a href="articulo.html" class="font-semibold underline"
+        >información general</a
+      >.
     </div>
   </div>
 </section>

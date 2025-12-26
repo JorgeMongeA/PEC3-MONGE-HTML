@@ -11,31 +11,34 @@
   </head>
 
   <body class="min-h-screen bg-white font-sans text-slate-900">
-    <!-- HEADER -->
-    <header
-      class="bg-gradient-to-r from-red-700 via-orange-500 to-amber-400 text-white"
-    >
+    <!-- HEADER  -->
+    <header class="bg-transparent">
       <div
-        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+        class="mx-auto max-w-6xl bg-gradient-to-r from-red-700 via-orange-500 to-amber-400 px-6 py-4 text-white"
       >
-        <a href="index.html" class="text-lg font-semibold">
-          Jornadas Cocina Tradicional
-        </a>
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="text-lg font-semibold">
+            Jornadas Cocina Tradicional
+          </a>
 
-        <nav class="hidden gap-4 text-sm sm:flex">
-          <a class="hover:underline" href="index.html">Inicio</a>
-          <a class="hover:underline" href="#">Ponentes</a>
-          <a class="hover:underline" href="articulo.html">Información</a>
-          <a class="hover:underline" href="#">Inscripción</a>
-        </nav>
+          <nav class="hidden gap-6 text-sm sm:flex">
+            <a class="hover:underline" href="index.html">Inicio</a>
+            <a class="hover:underline" href="#">Ponentes</a>
+            <a class="hover:underline" href="articulo.html">Información</a>
+            <a class="hover:underline" href="#">Inscripción</a>
+            <a class="hover:underline" href="figma.html">Figma IA</a>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <!-- HERO -->
     <include src="./views/components/hero-home.html"></include>
 
     <!-- BLOQUE INFO -->
     <include src="./views/components/cards-section.html"></include>
+
+    <!-- FOOTER -->
+    <include src="./views/components/footer-site.html"></include>
 
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>

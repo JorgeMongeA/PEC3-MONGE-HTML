@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+
+    <title>Contestants – Cooking Contest 2024</title>
+  </head>
+
+  <body class="flex min-h-screen flex-col bg-white font-sans text-slate-900">
+    <!-- HEADER -->
+    <header class="mx-auto w-full max-w-7xl px-6 py-6">
+      <div class="flex items-center justify-between">
+        <span class="text-lg font-bold">Cooking contest 2024 edition</span>
+
+        <nav class="hidden items-center gap-8 md:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="#" class="nav-link">The contest</a>
+          <a href="#" class="nav-link">Recipes</a>
+          <span class="btn-primary">Contestants</span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <!-- HERO -->
+      <section class="px-4 pt-12 pb-8 text-center">
+        <h1 class="mb-4 text-4xl font-bold md:text-5xl">Contestants</h1>
+        <p class="text-lg text-slate-500">
+          This section describes the recipes of the best contestants
+        </p>
+      </section>
+
+      <!-- IMAGE -->
+      <div class="mx-auto mb-16 max-w-7xl px-6">
+        <img
+          src="https://images.unsplash.com/photo-1511690656952-34342d2c7135?q=80&w=2070&auto=format&fit=crop"
+          alt="People eating at a rustic table"
+          class="h-64 w-full rounded-xl object-cover md:h-[400px]"
+        />
+      </div>
+
+      <!-- RECIPES -->
+      <section class="mx-auto mb-24 max-w-7xl px-6">
+        <header class="mb-8">
+          <h2 class="mb-2 text-2xl font-bold">The recipes</h2>
+          <p class="text-slate-500">
+            These are the recipes of the best contestants
+          </p>
+        </header>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <article class="card-wrapper">
+            <h3 class="mb-6 text-lg font-bold">Cajun seafood pasta</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="https://i.pravatar.cc/150?u=John"
+                alt="John Cooper"
+                class="h-10 w-10 rounded-full"
+              />
+              <div>
+                <p class="text-sm font-bold">John Cooper</p>
+                <p class="mt-1 text-xs text-slate-500">
+                  This Cajun seafood pasta recipe is a hot one, but delicious!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-wrapper">
+            <h3 class="mb-6 text-lg font-bold">Cedar planked salmon</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="https://i.pravatar.cc/150?u=Marta"
+                alt="Marta Alonso"
+                class="h-10 w-10 rounded-full"
+              />
+              <div>
+                <p class="text-sm font-bold">Marta Alonso</p>
+                <p class="mt-1 text-xs text-slate-500">
+                  Salmon reaches its full potential when it's grilled on top of
+                  a cedar plank.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-wrapper">
+            <h3 class="mb-6 text-lg font-bold">Poulet au vinaigre</h3>
+            <div class="flex items-start gap-4">
+              <img
+                src="https://i.pravatar.cc/150?u=Mary"
+                alt="Mary Ann Stones"
+                class="h-10 w-10 rounded-full"
+              />
+              <div>
+                <p class="text-sm font-bold">Mary Ann Stones</p>
+                <p class="mt-1 text-xs text-slate-500">
+                  Irresistible chicken, cooked with vinegar.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 py-12">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4"
+      >
+        <div>
+          <p class="mb-4 text-sm font-bold">Cooking contest 2024 edition</p>
+          <div class="flex gap-3">
+            <span class="h-8 w-8 rounded-full bg-slate-200"></span>
+            <span class="h-8 w-8 rounded-full bg-slate-200"></span>
+            <span class="h-8 w-8 rounded-full bg-slate-200"></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="mb-4 text-xs font-bold uppercase">Recipes</h4>
+          <ul class="space-y-2 text-xs text-slate-600">
+            <li>Cajun seafood pasta</li>
+            <li>Cedar planked salmon</li>
+            <li>Poulet au vinaigre</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-4 text-xs font-bold uppercase">Contestants</h4>
+          <ul class="space-y-2 text-xs text-slate-600">
+            <li>John Cooper</li>
+            <li>Marta Alonso</li>
+            <li>Mary Ann Stones</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="mb-4 text-xs font-bold uppercase">Contest editions</h4>
+          <ul class="space-y-2 text-xs text-slate-600">
+            <li>2024</li>
+            <li>2023</li>
+            <li>2022</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

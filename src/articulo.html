@@ -11,81 +11,136 @@
   </head>
 
   <body class="min-h-screen bg-white font-sans text-slate-900">
-    <!-- HEADER -->
-    <header class="bg-brand-primary text-white">
+    <!-- HEADER centrado -->
+    <header class="bg-transparent">
       <div
-        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+        class="mx-auto max-w-6xl bg-gradient-to-r from-red-700 via-orange-500 to-amber-400 px-6 py-4 text-white"
       >
-        <a href="index.html" class="text-lg font-semibold">
-          Jornadas Cocina Tradicional
-        </a>
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="text-lg font-semibold">
+            Jornadas Cocina Tradicional
+          </a>
 
-        <nav class="hidden gap-4 text-sm sm:flex">
-          <a class="hover:underline" href="index.html">Inicio</a>
-          <a class="hover:underline" href="#">Ponentes</a>
-          <a class="hover:underline" href="articulo.html">Información</a>
-          <a class="hover:underline" href="#">Inscripción</a>
-        </nav>
+          <nav class="hidden gap-6 text-sm sm:flex">
+            <a class="hover:underline" href="index.html">Inicio</a>
+            <a class="hover:underline" href="#">Ponentes</a>
+            <a class="hover:underline" href="articulo.html">Información</a>
+            <a class="hover:underline" href="#">Inscripción</a>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <!-- HERO ARTÍCULO -->
+    <!-- HERO ARTÍCULO (imagen arriba, como PEC2) -->
     <include src="./views/components/hero-article.html"></include>
 
-    <!-- CONTENIDO -->
-    <article
-      class="mx-auto max-w-3xl px-4 py-12 text-base leading-relaxed text-slate-800"
-    >
-      <h2 class="font-semibold text-brand-primary">Qué son estas jornadas</h2>
+    <!-- CONTENIDO con más densidad (estructura PEC2) -->
+    <article class="mx-auto max-w-4xl px-4 pb-16">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="mt-12 text-3xl font-medium text-slate-900">
+          Qué son estas jornadas
+        </h2>
 
-      <p class="mt-4">
-        Las jornadas de cocina tradicional nacen con la idea de recuperar las
-        recetas que han pasado de generación en generación.
-      </p>
+        <p class="mt-4 text-slate-700">
+          Las jornadas de cocina tradicional nacen con la idea de dar espacio a
+          las recetas que han pasado de generación en generación y que hoy
+          corren el riesgo de perderse entre prisas, procesados y menús calcados
+          en todas partes. Durante tres días, la ciudad se llena de talleres,
+          charlas y degustaciones centradas en la cocina de proximidad y de
+          temporada.
+        </p>
 
-      <p class="mt-4">
-        El objetivo no es competir con la alta gastronomía, sino recuperar el
-        valor de los platos hechos en casa.
-      </p>
+        <p class="mt-4 text-slate-700">
+          El objetivo no es competir con la alta gastronomía, sino recuperar el
+          valor de los platos hechos en casa: guisos lentos, postres sencillos,
+          técnicas de conservación y maneras de aprovechar cada ingrediente.
+          Cocinar despacio se convierte aquí en una excusa para compartir
+          historias y reforzar el tejido comunitario.
+        </p>
 
-      <blockquote
-        class="mt-6 border-l-4 border-brand-primary pl-4 italic text-slate-700"
-      >
-        «Cuando recuperamos una receta de siempre no estamos copiando el pasado,
-        estamos construyendo memoria colectiva.»
-      </blockquote>
-
-      <h2 class="mt-10 font-semibold text-brand-primary">
-        Cómo se estructura el programa
-      </h2>
-
-      <ul class="mt-4 list-disc space-y-2 pl-5">
-        <li><strong>Talleres prácticos</strong> en grupos reducidos.</li>
-        <li>
-          <strong>Charlas y mesas redondas</strong> con expertos del sector.
-        </li>
-        <li><strong>Degustaciones comentadas</strong> guiadas.</li>
-      </ul>
-
-      <h2 class="mt-10 font-semibold text-brand-primary">
-        Información práctica
-      </h2>
-
-      <p class="mt-4">
-        Las actividades se realizan en el Centro Cívico Municipal. La
-        inscripción es gratuita.
-      </p>
-
-      <p class="mt-4">
-        Contacto:
-        <a
-          href="mailto:info@jornadascocina.local"
-          class="underline underline-offset-2"
+        <blockquote
+          class="mt-8 bg-slate-50 px-6 py-5 text-sm italic text-slate-700"
         >
-          info@jornadascocina.local
-        </a>
-      </p>
+          <span class="inline-block border-l-4 border-orange-500 pl-4">
+            «Cuando recuperamos una receta de siempre no estamos copiando el
+            pasado, estamos construyendo memoria colectiva.»
+          </span>
+        </blockquote>
+
+        <h2 class="mt-12 text-3xl font-medium text-slate-900">
+          Cómo se estructura el programa
+        </h2>
+
+        <p class="mt-4 text-slate-700">
+          El programa combina actividades abiertas al público con plazas
+          limitadas para los talleres prácticos. Cada franja horaria mezcla
+          formatos distintos para que cualquier persona pueda encontrar algo que
+          encaje con su nivel de experiencia y disponibilidad.
+        </p>
+
+        <ul class="mt-6 list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            <strong>Talleres prácticos</strong> en grupos reducidos, con una
+            parte demostrativa y otra en la que cada participante cocina su
+            propio plato.
+          </li>
+          <li>
+            <strong>Charlas y mesas redondas</strong> con cocineros, productores
+            y expertos en patrimonio gastronómico.
+          </li>
+          <li>
+            <strong>Degustaciones comentadas</strong> donde se explican los
+            ingredientes, el origen de las recetas y su vínculo con el entorno.
+          </li>
+        </ul>
+
+        <h2 class="mt-12 text-3xl font-medium text-slate-900">
+          Perfil de los ponentes
+        </h2>
+
+        <p class="mt-4 text-slate-700">
+          Las personas invitadas provienen de contextos muy diversos: cocineros
+          profesionales, profesores de escuela de hostelería, productores
+          locales, investigadores de la UOC y representantes de entidades del
+          barrio. Esta mezcla garantiza una mirada plural y evita que la cocina
+          tradicional se quede en una postal idealizada.
+        </p>
+
+        <p class="mt-4 text-slate-700">
+          En la página de
+          <a href="#" class="text-blue-600 underline">ponentes</a> se puede
+          consultar la biografía resumida de cada uno, junto con el tipo de
+          actividad en la que participa.
+        </p>
+
+        <h2 class="mt-12 text-3xl font-medium text-slate-900">
+          Información práctica
+        </h2>
+
+        <p class="mt-4 text-slate-700">
+          Todas las actividades tienen lugar en el Centro Cívico Municipal, Sala
+          Gastronómica. La inscripción es gratuita, pero es necesario reservar
+          plaza para los talleres. El formulario de reserva está disponible en
+          la sección de
+          <a href="#" class="text-blue-600 underline">inscripción</a>.
+        </p>
+
+        <p class="mt-4 text-slate-700">
+          Ante cualquier duda logística, alergias o necesidades alimentarias
+          específicas, se recomienda contactar con la organización a través del
+          correo
+          <a
+            href="mailto:info@jornadascocina.local"
+            class="text-blue-600 underline"
+          >
+            info@jornadascocina.local </a
+          >.
+        </p>
+      </div>
     </article>
+
+    <!-- FOOTER -->
+    <include src="./views/components/footer-site.html"></include>
 
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>
