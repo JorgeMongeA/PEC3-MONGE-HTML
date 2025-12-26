@@ -1,10 +1,40 @@
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-  <link rel="stylesheet" type="text/css" href="./assets/styles/tailwind.css" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
 
-  <title>UOC Boilerplate</title>
-</head>
-<h1 class="uoc-title text-red-500 text-3xl">Hola Jorge Dale caña!!</h1>
+    <title>Jornadas de Cocina Tradicional</title>
+  </head>
+
+  <body class="min-h-screen bg-white font-sans text-slate-900">
+    <!-- HEADER -->
+    <header class="bg-brand-primary text-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+      >
+        <a href="index.html" class="text-lg font-semibold">
+          Jornadas Cocina Tradicional
+        </a>
+
+        <nav class="hidden gap-4 text-sm sm:flex">
+          <a class="hover:underline" href="index.html">Inicio</a>
+          <a class="hover:underline" href="#">Ponentes</a>
+          <a class="hover:underline" href="articulo.html">Información</a>
+          <a class="hover:underline" href="#">Inscripción</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <include src="./views/components/hero-home.html"></include>
+
+    <!-- BLOQUE INFO -->
+    <include src="./views/components/cards-section.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

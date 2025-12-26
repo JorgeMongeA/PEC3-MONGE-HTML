@@ -1,0 +1,39 @@
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-xl font-semibold text-brand-primary">
+      Qué encontrarás en las jornadas
+    </h2>
+
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <include
+        src="./views/components/card.html"
+        locals='{
+          "title": "Talleres de cocina tradicional",
+          "text": "Sesiones prácticas en grupos reducidos para aprender guisos y técnicas de conservación.",
+          "badgeText": "Plazas limitadas",
+          "badgeClass": "badge-primary"
+        }'
+      ></include>
+
+      <include
+        src="./views/components/card.html"
+        locals='{
+          "title": "Charlas y ponencias",
+          "text": "Expertos explican la historia y el futuro de la cocina tradicional.",
+          "badgeText": "Entrada libre",
+          "badgeClass": "badge-muted"
+        }'
+      ></include>
+
+      <include
+        src="./views/components/card.html"
+        locals='{
+          "title": "Degustaciones comentadas",
+          "text": "Catas guiadas para entender ingredientes y tradición.",
+          "badgeText": "Incluido con inscripción",
+          "badgeClass": "badge-success"
+        }'
+      ></include>
+    </div>
+  </div>
+</section>

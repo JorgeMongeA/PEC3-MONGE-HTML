@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+
+    <title>Jornadas de Cocina Tradicional · Información</title>
+  </head>
+
+  <body class="min-h-screen bg-white font-sans text-slate-900">
+    <!-- HEADER -->
+    <header class="bg-brand-primary text-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+      >
+        <a href="index.html" class="text-lg font-semibold">
+          Jornadas Cocina Tradicional
+        </a>
+
+        <nav class="hidden gap-4 text-sm sm:flex">
+          <a class="hover:underline" href="index.html">Inicio</a>
+          <a class="hover:underline" href="#">Ponentes</a>
+          <a class="hover:underline" href="articulo.html">Información</a>
+          <a class="hover:underline" href="#">Inscripción</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO ARTÍCULO -->
+    <include src="./views/components/hero-article.html"></include>
+
+    <!-- CONTENIDO -->
+    <article
+      class="mx-auto max-w-3xl px-4 py-12 text-base leading-relaxed text-slate-800"
+    >
+      <h2 class="font-semibold text-brand-primary">Qué son estas jornadas</h2>
+
+      <p class="mt-4">
+        Las jornadas de cocina tradicional nacen con la idea de recuperar las
+        recetas que han pasado de generación en generación.
+      </p>
+
+      <p class="mt-4">
+        El objetivo no es competir con la alta gastronomía, sino recuperar el
+        valor de los platos hechos en casa.
+      </p>
+
+      <blockquote
+        class="mt-6 border-l-4 border-brand-primary pl-4 italic text-slate-700"
+      >
+        «Cuando recuperamos una receta de siempre no estamos copiando el pasado,
+        estamos construyendo memoria colectiva.»
+      </blockquote>
+
+      <h2 class="mt-10 font-semibold text-brand-primary">
+        Cómo se estructura el programa
+      </h2>
+
+      <ul class="mt-4 list-disc space-y-2 pl-5">
+        <li><strong>Talleres prácticos</strong> en grupos reducidos.</li>
+        <li>
+          <strong>Charlas y mesas redondas</strong> con expertos del sector.
+        </li>
+        <li><strong>Degustaciones comentadas</strong> guiadas.</li>
+      </ul>
+
+      <h2 class="mt-10 font-semibold text-brand-primary">
+        Información práctica
+      </h2>
+
+      <p class="mt-4">
+        Las actividades se realizan en el Centro Cívico Municipal. La
+        inscripción es gratuita.
+      </p>
+
+      <p class="mt-4">
+        Contacto:
+        <a
+          href="mailto:info@jornadascocina.local"
+          class="underline underline-offset-2"
+        >
+          info@jornadascocina.local
+        </a>
+      </p>
+    </article>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
